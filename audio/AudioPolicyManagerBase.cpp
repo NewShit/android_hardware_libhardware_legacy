@@ -1041,7 +1041,6 @@ status_t AudioPolicyManagerBase::setStreamVolumeIndex(AudioSystem::stream_type s
         || (device == curDevice)
 #endif
         ){
->>>>>>> 62b9861... merged in ICS_AUDIO_BLOB ifdefs from CyanogenMod
             status_t volStatus = checkAndSetVolume(stream, index, mOutputs.keyAt(i), curDevice);
             if (volStatus != NO_ERROR) {
                 status = volStatus;
